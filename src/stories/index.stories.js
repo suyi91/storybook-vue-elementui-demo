@@ -3,6 +3,12 @@ import { storiesOf } from '@storybook/vue'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
+import Vue from 'vue';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(Element);
+
 import MyButton from '../components/MyButton.vue'
 
 storiesOf('Button', module)
@@ -23,3 +29,10 @@ storiesOf('Button', module)
     template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
     methods: { action: action('clicked') }
   }))
+
+storiesOf('ElButton', module)
+  .add('basic test', () => ({
+    template: '<el-button>test</el-button>'
+  }), {
+    notes: '这里是notes',
+  })
