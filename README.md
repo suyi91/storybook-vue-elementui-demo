@@ -1,29 +1,15 @@
-# storybook-demo
+# storybook-vue-elementui-demo
 
-## Project setup
-```
-yarn install
-```
+![](screenshot.jpg)
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
+## develop using storybook
+
+```bash
+$ npm run storybook:serve
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## generate storybook app files
 
-### Run your tests
+```bash
+$ npm run storybook:build
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

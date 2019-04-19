@@ -10,6 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Element);
 
 import MyButton from '../components/MyButton.vue'
+import MyElementButton from '../components/MyElementButton.vue'
 
 storiesOf('Button', module)
   .add('with text', () => ({
@@ -34,5 +35,11 @@ storiesOf('ElButton', module)
   .add('basic test', () => ({
     template: '<el-button>test</el-button>'
   }), {
-    notes: '这里是notes',
+    notes: 'Here are the notes.',
   })
+
+storiesOf('MyElementButton', module)
+  .add('basic test', () => ({
+    template: '<my-element-button></my-element-button>',
+    components: { MyElementButton },
+  }))
